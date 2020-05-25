@@ -1,0 +1,78 @@
+.dash-followers{
+  background-color: var(--card-bg);
+  &:hover {
+    background-color: var(--card-bg-hover);
+  }
+   &.-facebook{
+    @include bordertop-socialmedia($facebook);
+  }
+  &.-twitter{
+    @include bordertop-socialmedia($twitter);
+  }
+  &.-instagram{
+    @include bordertop-socialmedia($instagram);
+  }
+  &.-youtube{
+    @include bordertop-socialmedia($youtube);
+  }
+  > .socialmedia{
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  > .username{
+    font-size: 0.75em;
+    color: var(--text-color-secondary);
+    font-weight: $bold;
+  }
+  > .total{
+    font-size: 3em;
+    margin: 10px 0 0;
+    font-weight: $bold;
+    color: var(--text-color-primary);
+  }
+  >.followers{
+    margin: 5px 0;
+    font-size: .75em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--text-color-secondary);
+    margin-bottom: 20px;
+  }
+  > .change{
+    width: 8px;
+    margin-right: 5px;
+  }
+  > .today{
+    font-size: .75em;
+    font-weight: $bold;
+  }
+  >.today.-green{
+    color: $limeGreen;
+  }
+  >.today.-red{
+    color: $brightRed;
+  }
+
+  @media (min-width: #{$tablet-breakpoint}){
+    max-width: component-width($tablet-breakpoint, 0.5);
+    margin: 0 30px 30px 0;
+    flex: 1;
+    &:nth-child(even){
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: #{$desktop-breakpoint}){
+    min-width: component-width($desktop-breakpoint, 0.25);
+    margin: 0 30px 0 0;
+    flex: 1;
+    &:nth-child(even){
+      margin-right: 30px;
+    }
+    /*four multiples have margin-right:0*/
+    &:nth-child(4n){
+      margin-right: 0;
+    }
+  }
+}

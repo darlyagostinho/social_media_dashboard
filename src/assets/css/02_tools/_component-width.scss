@@ -1,0 +1,3 @@
+@function component-width($breakpoint, $percent:1, $marginX:0){
+  @return calc( (#{$breakpoint}*#{$percent}) - #{$marginX});
+}

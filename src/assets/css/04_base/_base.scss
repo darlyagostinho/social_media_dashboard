@@ -1,0 +1,25 @@
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+main{
+  padding: 20px 30px;
+  background-color: var(--main-bg);
+}
+
+/*title @param: $color, $margin, $padding, $font-size, 
+$letter-spacing:initial, $font-family:$font-main*/
+
+h1{
+  @include title (var(--text-color-primary), 0, 10px 0, 1.5em, .05em);
+}
+
+h2{
+  @include title (var(--text-color-primary), 40px 0 20px, initial, 1.2em, .05em);
+}
+
+h3{
+  @include title (var(--text-color-secondary), 0, initial, 1em);
+}
+
+

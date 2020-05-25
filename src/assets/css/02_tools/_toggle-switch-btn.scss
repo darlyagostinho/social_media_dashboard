@@ -1,0 +1,48 @@
+@mixin toggle-switch-btn{
+.switch {
+  /* The switch - the box around the slider */
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 26px;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  --gradBlue: hsl(210, 78%, 56%);
+  --gradGreen: hsl(146, 68%, 55%);
+  background-image: linear-gradient(var(--gradBlue),var(--gradGreen) );
+  transition: .4s;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: var(--header-bg);
+    transition: .4s;
+  }
+  /* Rounded sliders */
+    &.round::before {
+      border-radius: 50%;
+    }
+
+    &.round {
+    border-radius: 34px;
+  }
+
+  .checkbox:checked + .header &::before {
+    transform: translateX(25px);
+  }
+
+  }
+}
+

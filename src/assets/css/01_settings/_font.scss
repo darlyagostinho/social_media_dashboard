@@ -1,29 +1,29 @@
-$sans-serif: sans-serif;
-$font-main: 'Inter';
+$font-main: Inter;
 $fontDisplay-optional: optional;
-$fontWeight-400: 400;
-$fontWeight-700: 700;
+$regular: 400;
+$bold: 700;
 $webFontRegular-url: 'https://fonts.googleapis.com/css2?family=Inter';
 $webFontBold-url: 'https://fonts.googleapis.com/css2?family=Inter:wght@700';
-$fontRegular-url: '../../font/Inter-Regular-slnt=0.ttf';
-$fontBold-url: '../../font/Inter-Bold-slnt=0.ttf';
+$fontRegular-url: '../font/Inter-Regular-slnt=0.ttf';
+$fontBold-url: '../font/Inter-Bold-slnt=0.ttf';
 $fontFormat-url: 'truetype';
 
 @font-face{
-  font-family: $font, $sans-serif;
-  font-weight: $fontWeight-400;
+  font-family: $font-main;
+  font-weight: $regular;
   font-display: $fontDisplay-optional;
   src: local($font-main),
-       url($webFontRegular-url),
-       url($fontRegular-url) format($fontFormat-url);
+       url($fontRegular-url) format($fontFormat-url),
+       url($webFontRegular-url);
 }
 
 @font-face{
-  font-family: $font, $sans-serif;
-  font-weight: $fontWeight-700;
+  font-family: $font-main, sans-serif;
+  font-weight: $bold;
   font-display: $fontDisplay-optional;
   src: local($font-main),
-       url($webFontBold-url),
-       url($fontBold-url) format($fontFormat-url);
+       url($fontBold-url) format($fontFormat-url),
+       url($webFontBold-url);
+
 }
 

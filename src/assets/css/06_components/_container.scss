@@ -1,0 +1,22 @@
+.container{
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: #{$tablet-breakpoint}) {
+    max-width: $tablet-breakpoint;
+    &.-flex{
+      @include display-flex
+    }
+  }
+  @media (min-width: #{$desktop-breakpoint}) {
+    max-width: $desktop-breakpoint;
+    &.-flex{
+      @include display-flex
+    }
+    &.-flexbetween{
+      @include space-between;
+    }
+  }
+}
+
+
+

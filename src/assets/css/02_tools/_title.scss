@@ -1,0 +1,10 @@
+@mixin title ($color, $margin, $padding, $font-size,
+ $letter-spacing:initial, $font-family:$font-main) {
+  color: $color;
+  margin: $margin;
+  padding: $padding;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  font-family: $font-family;
+}
+

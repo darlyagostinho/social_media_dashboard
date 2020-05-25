@@ -1,0 +1,31 @@
+.header{
+  background-color: var(--header-bg);
+  padding: 30px 30px 120px;
+}
+
+.title{
+  >.followers{
+    margin-top: 0;
+    color: var(--text-color-secondary);
+    font-weight: $bold;
+  }
+}
+
+.themecolor{
+  @include space-between;
+ 
+  border-top: 1px solid var(--smallbreakpoint-line-color);
+  padding-top: 5px;
+  @media (min-width: #{$desktop-breakpoint}){
+    border-top: none;
+    padding-top: 0;
+  }
+  >.mode{
+    color: var(--text-color-primary);
+    font-weight: $bold;
+    @media (min-width: #{$desktop-breakpoint}){
+      margin: 0 10px 0 0;
+  }
+}
+}
+@include toggle-switch-btn;

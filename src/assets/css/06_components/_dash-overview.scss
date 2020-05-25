@@ -1,0 +1,60 @@
+.dash-overview{
+  background-color: var(--card-bg);
+  &:hover{
+    background-color: var(--card-bg-hover);
+  }
+  >.oversocialmedia{
+    @include space-between;
+  }
+  >.overdata{
+    @include space-between;
+  }
+  @media (min-width: #{$tablet-breakpoint}) {
+    min-width: component-width($tablet-breakpoint, 0.5, 60px);
+    flex: 1;
+    //not include even components to apply margin
+    &:not(:nth-child(even)){
+      margin-right: 30px;
+    }
+  }
+
+  @media (min-width: #{$desktop-breakpoint}) {
+    min-width: component-width($desktop-breakpoint, 0.25, 60px);
+      margin-right: 30px;
+    /*four multiples have margin-right:0*/
+    &:nth-child(4n){
+      margin-right: 0;
+    }
+  }
+}
+
+.overdata{
+  >.overtotal{
+    color: var(--text-color-primary);
+    font-size: 1.5em;
+    font-weight: $bold;
+    margin: 0;
+  }
+}
+
+.overchangeicon{
+  >.overpercent{
+    font-size: .875em;
+    font-weight: $bold;
+  }
+  >.overpercent.-green{
+    color: $limeGreen;
+  }
+  >.overpercent.-red{
+    color: $brightRed;
+  }
+}
+
+.oversocialmedia{
+  padding-bottom: 20px;
+  >.oversocial{
+    display: block;
+  }
+}
+
+

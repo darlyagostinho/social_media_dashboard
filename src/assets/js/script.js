@@ -1,4 +1,6 @@
-// alert('Olá2');
-// alert('Olá, Mundo2');
-// const minhaVariavel2 = true;
-// let varwwe2 = 13;
+let elm = document.getElementById("theme-mode");
+let themeMode = document.querySelector('.mode');
+
+elm.addEventListener('click', function(){
+  elm.checked ? themeMode.textContent = 'Light Mode' : themeMode.textContent = 'Dark Mode';
+});

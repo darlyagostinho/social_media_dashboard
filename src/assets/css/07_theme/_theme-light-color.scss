@@ -1,0 +1,24 @@
+.checkbox:checked ~ main,
+.checkbox:checked ~ header{
+  --text-color-primary: hsl(230, 17%, 14%);
+  --text-color-secondary: hsl(228, 12%, 44%);
+}
+
+.checkbox:checked ~ main{
+  --card-bg: hsl(227, 47%, 96%);
+  --card-bg-hover: #e1e3f0;
+  --smallbreakpoint-line-color: #5a5e97;
+}
+
+.checkbox:checked ~ header{
+  --header-bg: hsl(225, 100%, 98%);
+}
+
+.checkbox:checked ~ .header .slider{
+  background-image: none;
+  background-color: hsl(230, 22%, 74%);
+}
+
+
+
+
