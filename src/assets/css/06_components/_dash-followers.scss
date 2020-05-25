@@ -10,7 +10,7 @@
     @include bordertop-socialmedia($twitter);
   }
   &.-instagram{
-    @include bordertop-socialmedia($instagram);
+    @include bordertop-gradient($in-init, $in-end);
   }
   &.-youtube{
     @include bordertop-socialmedia($youtube);

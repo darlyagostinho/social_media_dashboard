@@ -2,26 +2,16 @@
   border-top-color: $color;
 }
 @mixin bordertop-gradient($init, $end){
-    // border: double 4px transparent;
-    // border-radius: 80px;
-    // background-image: linear-gradient(white, white), radial-gradient(circle at top left, $init, $end);
-    // background-origin: border-box;
-    // background-clip: content-box, border-box;
+  border-color: transparent;
+  background: 
+      linear-gradient(var(--card-bg), var(--card-bg)), 
+      linear-gradient(to right, var(--card-bg) 0, $init 10%,  $end 97%, var(--card-bg)); 
+  background-clip: padding-box, border-box;
+
 }
 
-// $list: facebook, twitter, instagram, youtube !global;
-// $socialmedia: blue, purple, pink, yellow !global;
-
-// @mixin socialmedia($list, $socialmedia){
-//   @each $item in $list{
-//     &.-#{$item}{
-//       @include bordertop-socialmedia($socialmedia.nth($socialmedia, 2));
-//     }
-//   }
-// }
 
 
-// @debug list.nth(10px 12px 16px, 2); 
 
 
 
