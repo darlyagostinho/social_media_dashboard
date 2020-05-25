@@ -5,6 +5,9 @@ body{
 main{
   padding: 20px 30px;
   background-color: var(--main-bg);
+  @media (min-width: #{$desktop-breakpoint}) {
+    height: 100vh;
+  }
 }
 
 /*title @param: $color, $margin, $padding, $font-size, 

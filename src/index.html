@@ -1,13 +1,196 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Media Dashboard</title>
   <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
+
 <body>
-  funfou? Acho que sim. Tenho dúvidas... ddf 
+  <input type="checkbox" class="checkbox hide" id="theme-mode">
+  <header class="header">
+    <div class="container -flexbetween">
+      <div class="title">
+        <h1>Dashboard de Mídias Sociais</h1>
+        <p class="followers">Total Seguidores: 23.004</p>
+      </div>
+      
+      <div class="themecolor">
+        <p class="mode">Dark Mode</p>
+        <label for="theme-mode" class="switch">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="followers-wrapper">
+      <h2 class="hide">Seguidores</h2>
+      <div class="container -flex">
+        <div class="dash-followers -facebook">
+          <img class="socialmedia" src="assets/images/icon-facebook.svg" alt="icon-facebook">
+          <span class="username">@darlyagostinho</span>
+          <p class="total">1987</p>
+          <p class="followers">Seguidores</p>
+          <img class="change" src="assets/images/icon-up.svg" alt="icon-up">
+          <span class="today -green">12 Hoje</span>
+        </div>
+
+        <div class="dash-followers -twitter">
+          <img class="socialmedia" src="assets/images/icon-twitter.svg" alt="icon-twitter">
+          <span class="username">@darlyagostinho</span>
+          <p class="total">1044</p>
+          <p class="followers">Seguidores</p>
+          <img class="change" src="assets/images/icon-up.svg" alt="icon-up">
+          <span class="today -green">99 Hoje</span>
+        </div>
+
+        <div class="dash-followers -instagram">
+          <img class="socialmedia" src="assets/images/icon-instagram.svg" alt="icon-instagram">
+          <span class="username">@darlyagostinho</span>
+          <p class="total">11K</p>
+          <p class="followers">Seguidores</p>
+          <img class="change" src="assets/images/icon-up.svg" alt="icon-up">
+          <span class="today -green">1099 Hoje</span>
+        </div>
+
+        <div class="dash-followers -youtube">
+          <img class="socialmedia" src="assets/images/icon-youtube.svg" alt="icon-youtube">
+          <span class="username">@darlyagostinho</span>
+          <p class="total">8239</p>
+          <p class="followers">Inscritos</p>
+          <img class="change" src="assets/images/icon-down.svg" alt="icon-down">
+          <span class="today -red">144 Hoje</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview-today">
+      <div class="container">
+        <h2>Visão Geral - Hoje</h2>
+
+        <div class="overview-wrapper">
+          <article class="dash-overview">
+            <div class="oversocialmedia">
+              <h3 class="oversubtitle">Page Views</h3>
+              <img class="oversocial" src="assets/images/icon-facebook.svg" alt="icon-facebook">
+            </div>
+            <div class="overdata">
+              <p class="overtotal">87</p>
+              <div class="overchangeicon">
+                <img class="overchange" src="assets/images/icon-up.svg" alt="icon-up">
+                <span class="overpercent -green">3%</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dash-overview">
+            <div class="oversocialmedia">
+              <h3 class="oversubtitle">Likes</h3>
+              <img class="oversocial" src="assets/images/icon-facebook.svg" alt="icon-facebook">
+            </div>
+            <div class="overdata">
+              <p class="overtotal">52</p>
+              <div class="overchangeicon">
+                <img class="overchange" src="assets/images/icon-down.svg" alt="icon-down">
+                <span class="overpercent -red">2%</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dash-overview">
+            <div class="oversocialmedia">
+              <h3 class="oversubtitle">Likes</h3>
+              <img class="oversocial" src="assets/images/icon-instagram.svg" alt="icon-instagram">
+            </div>
+            <div class="overdata">
+              <p class="overtotal">5462</p>
+              <div class="overchangeicon">
+                <img class="overchange" src="assets/images/icon-up.svg" alt="icon-up">
+                <span class="overpercent -green">2257%</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dash-overview">
+            <div class="oversocialmedia">
+              <h3 class="oversubtitle">Profile Views</h3>
+              <img class="oversocial" src="assets/images/icon-instagram.svg" alt="icon-instagram">
+            </div>
+            <div class="overdata">
+              <p class="overtotal">52K</p>
+              <div class="overchangeicon">
+                <img class="overchange" src="assets/images/icon-up.svg" alt="icon-up">
+                <span class="overpercent -green">1375%</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dash-overview">
+            <div class="oversocialmedia">
+              <h3 class="oversubtitle">Retweets</h3>
+              <img class="oversocial" src="assets/images/icon-twitter.svg" alt="icon-twitter">
+            </div>
+            <div class="overdata">
+              <p class="overtotal">117</p>
+              <div class="overchangeicon">
+                <img class="overchange" src="assets/images/icon-up.svg" alt="icon-up">
+                <span class="overpercent -green">303%</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dash-overview">
+            <div class="oversocialmedia">
+              <h3 class="oversubtitle">Likes</h3>
+              <img class="oversocial" src="assets/images/icon-twitter.svg" alt="icon-twitter">
+            </div>
+            <div class="overdata">
+              <p class="overtotal">507</p>
+              <div class="overchangeicon">
+                <img class="overchange" src="assets/images/icon-up.svg" alt="icon-up">
+                <span class="overpercent -green">553%</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dash-overview">
+            <div class="oversocialmedia">
+              <h3 class="oversubtitle">Likes</h3>
+              <img class="oversocial" src="assets/images/icon-youtube.svg" alt="icon-youtube">
+            </div>
+            <div class="overdata">
+              <p class="overtotal">107</p>
+              <div class="overchangeicon">
+                <img class="overchange" src="assets/images/icon-down.svg" alt="icon-down">
+                <span class="overpercent -red">19%</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dash-overview">
+            <div class="oversocialmedia">
+              <h3 class="oversubtitle">Total Views</h3>
+              <img class="oversocial" src="assets/images/icon-youtube.svg" alt="icon-youtube">
+            </div>
+            <div class="overdata">
+              <p class="overtotal">1407</p>
+              <div class="overchangeicon">
+                <img class="overchange" src="assets/images/icon-down.svg" alt="icon-down">
+                <span class="overpercent -red">19%</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!--overview-wrapper-->
+      </div>
+    </section>
+  </main>
+
   <script src="assets/js/script.min.js"></script>
 </body>
+
 </html>
